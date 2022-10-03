@@ -2,11 +2,13 @@
   "name": "nodejs-homework",
   "version": "1.0.0",
   "description": "nodejs-homework",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index",
-    "start:dev": "nodemon index"
+    "start": "node server",
+    "start:dev": "nodemon server",
+    "lint": "eslint **/*.js",
+    "lint:fix": "eslint --fix **/*.js"
   },
   "author": "Nataliia Danyliuk",
   "license": "ISC",
@@ -15,11 +17,13 @@
     "commander": "^9.4.0",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "joi": "^17.6.2",
     "mongoose": "^6.6.1",
-    "nanoid": "3.3.4",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.3.4",
     "yargs": "^17.5.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.20"
   }
 }
